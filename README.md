@@ -1,36 +1,44 @@
-# UZOP-project
+# UZOP-project  
 # 🧠 Early-Stage Alzheimer's Disease Prediction Using Machine Learning Models
 
-Ovaj projekt je izrađen u sklopu kolegija **Uvod u znanost o podacima** i temelji se na repliciranju i proširivanju rezultata iz znanstvenog članka *“Early-Stage Alzheimer's Disease Prediction Using Machine Learning Models”*. Glavni cilj je izgraditi modele strojnog učenja za predikciju ranih stadija Alzheimerove bolesti na temelju kliničkih i demografskih podataka pacijenata.
+This project was developed as part of the *Introduction to Data Science* course and is based on replicating and extending the results from the scientific paper *“Early-Stage Alzheimer's Disease Prediction Using Machine Learning Models.”* The main goal was to build machine learning models to predict early stages of Alzheimer’s disease using clinical and demographic patient data.
 
-## 🔍 Faza 1: Priprema i vizualizacija podataka
+---
 
-U ovoj fazi projekta cilj je bio:
-- Učitati podatke iz dostupnog skupa i filtrirati ih na **prve posjete svakog pacijenta**
-- Pozabaviti se s nedostajućim i stršećim vrijednostima
-- Ispitati osnovne informacije o podacima (broj redaka, tipovi podataka, distribucije)
-- Normalizirati vrijednosti i pripremiti podatke za analizu
-- Vizualizirati podatke koristeći metode poput:
-  - Korelacijske matrice
-  - Scatter plotova za svaki par značajki (zasebno obojeni pacijenti s Alzheimerom i bez njega)
-  - Box-plotova za usporedbu godina pacijenata
+## 🔍 Phase 1: Data Preparation and Visualization
 
-## 🧪 Faza 2: Replikacija i evaluacija modela
+In this phase, the goal was to:
 
-- Istrenirani su modeli korišteni u izvornom znanstvenom članku:
-  - **Logistička regresija**
+- Load data from the available dataset and filter it to include **only the first visit for each patient**
+- Handle missing and outlier values
+- Examine basic data characteristics (row count, data types, distributions)
+- Normalize values and prepare the dataset for analysis
+- Visualize the data using techniques such as:
+  - Correlation matrices
+  - Scatter plots for each feature pair (with separate coloring for patients with and without Alzheimer’s)
+  - Box plots to compare patient ages
+
+---
+
+## 🧪 Phase 2: Model Replication and Evaluation
+
+- Trained the models used in the original scientific paper:
+  - **Logistic Regression**
   - **Random Forest**
   - **SVM**
-- Evaluacija je provedena pomoću klasičnih metrika:
-  - Točnost, preciznost, F1-score
-  - AUC/ROC krivulje
-  - Konfuzijske matrice
-- Rezultati su uspoređeni s onima iz originalnog rada
+- Evaluated models using standard metrics:
+  - Accuracy, Precision, F1-score
+  - AUC/ROC curves
+  - Confusion matrices
+- Compared the results with those reported in the original paper
 
-## 🚀 Faza 3: Poboljšanje rezultata
+---
 
-U trećoj fazi projekta cilj je bio unaprijediti rezultate prethodnih faza kroz:
-- Testiranje novih modela: **XGBoost**, **LightGBM**, itd.
-- Proširenje skupa značajki (npr. dodatna obrada CDR vrijednosti)
-- Optimizaciju hiperparametara koristeći **GridSearchCV**
-- Daljnju evaluaciju uz detaljnije usporedbe metrika i vizualizaciju rezultata
+## 🚀 Phase 3: Improving Results
+
+In the third phase, the goal was to improve the outcomes of the previous stages by:
+
+- Testing new models: **XGBoost**, **LightGBM**, etc.  
+- Expanding the feature set (e.g. additional processing of CDR values)  
+- Optimizing hyperparameters using **GridSearchCV**  
+- Further evaluating results with detailed metric comparisons and visualizations
